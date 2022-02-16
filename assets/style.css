@@ -46,11 +46,27 @@ body {
 .padding-1 {
   padding: 1rem !important;
 }
-.navbar-links .contact {
+.navbar-links {
   position: relative;
   left: 25px;
 }
 
+button {
+  padding: 10px 25px;
+  background-color: #ffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-family: 500;
+}
+
+button:hover {
+  background-color: #ffff;
+  color: #130f40;
+  position: fixed;
+}
 .logo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -187,7 +203,7 @@ td {
   margin-right: 50%;
   position: relative;
   left: 72%;
-  top: -35%;
+  top: -60px;
   z-index: -1;
 }
 
@@ -200,26 +216,34 @@ td {
   margin-right: 50%;
   position: relative;
   left: 54%;
-  top: -25%;
+  top: -54%;
   z-index: -1;
 }
 
 .circle2 {
-  color: #59981a;
-  width: 30px;
-  height: 30px;
+  background-color: #f88e55;
+  opacity: 20;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin-right: 50%;
   position: relative;
-  left: 54%;
-  top: -25%;
+  left: 76%;
+  top: -130px;
+  z-index: 1;
 }
 
+.cir {
+  position: relative;
+  bottom: 40%;
+  z-index: 999;
+}
 .bio,
 .project {
   padding: 3%;
   justify-content: center;
 }
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -249,14 +273,22 @@ td {
   max-width: 100%;
 }
 
+.hobbies-img {
+  max-width: 500px;
+  padding: 85px;
+  margin: auto 20px;
+  float: center;
+}
+
 .hobby {
   background-color: #fff;
-  height: 400px;
+  height: 500px;
 }
 
 .hobby h2 {
   width: 100%;
   text-align: center;
+  padding-top: 20px;
 }
 
 * {
@@ -288,7 +320,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #59981a;
 }
 
 .message {
@@ -302,7 +334,10 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 .message-img img {
-  max-width: 55%;
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+  top: -100px;
 }
 .contact-form {
   float: right;
